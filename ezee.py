@@ -7,7 +7,7 @@ import os
 # CONFIG
 # =========================
 
-BOT_TOKEN = "8707298098:AAGpkSfLQJwA2tpV3sNGIJ7z_xAGPbqHEjY"
+BOT_TOKEN = "8629429297:AAGB-GLWLLIsT70kHJLjR9fEOiAffiymuSQ"
 
 EXTERNAL_API_URL = "https://exploitsindia.site/lookup/number.php?exploits="
 
