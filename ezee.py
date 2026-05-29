@@ -149,12 +149,24 @@ def phone_lookup(number):
 
         response = requests.get(final_url)
 
-        cleaned_text = response.text
+        lines = response.text.splitlines()
 
-        cleaned_text = cleaned_text.replace(
-            "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💳 BUY API : @Cyb3rS0ldier\n🆘 SUPPORT : @Cyb3rS0ldier",
-            ""
-        )
+        filtered_lines = []
+
+        for line in lines:
+
+            if "@Cyb3rS0ldier" in line:
+                continue
+
+            if "BUY API" in line:
+                continue
+
+            if "SUPPORT" in line:
+                continue
+
+            filtered_lines.append(line)
+
+        cleaned_text = "\n".join(filtered_lines)
 
         return cleaned_text
 
