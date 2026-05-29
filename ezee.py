@@ -152,7 +152,7 @@ def phone_lookup(number):
         cleaned_text = response.text
 
         cleaned_text = cleaned_text.replace(
-            "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💳 BUY API : @Cyb3rS0ldier\n🆘 SUPPORT : @Cyb3rS0ldier",
+            "━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💳 BUY API : @wooninjae",
             ""
         )
 
